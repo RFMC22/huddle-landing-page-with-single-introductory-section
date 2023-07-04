@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  #root{
+    background-image: url(./assets/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+  @media (min-width: 768px) {
+    #root{
+      background-image: url(./assets/bg-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: left center;
+      background-size: auto;
+    }
+  }
+}
